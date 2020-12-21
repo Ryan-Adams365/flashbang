@@ -6,7 +6,9 @@ import Panel from '../components/panel';
 class Start extends Component {
     render(){
         return(
-            <Panel text='Start' />
+            <Entity>
+                <Panel text='Start' clickFunc={this.props.funcs.gotoDeckSelect} row='2' col='1' />
+            </Entity>
         )
     }
 }
